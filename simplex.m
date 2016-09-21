@@ -7,6 +7,8 @@
 function [ts,xs] = simplex(A, b, c)
    
     simplexStart = tic;
+    
+    m = size(A, 1)
     % construct phase 1 problem
     e = ones(m,1);
     E = zeros(m,m);
